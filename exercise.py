@@ -1,2 +1,4 @@
-print{"hello world"}
-print{"Hi teerayuth"}
+print("hello world")
+print("Hi Teerayuth")
+print("wellcome to git")
+
