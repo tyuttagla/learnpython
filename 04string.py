@@ -48,25 +48,39 @@
 #               thai+=d
 # print(thai)
 
-#rot-13
+# #rot-13
+# line= input("Enter any text:")
+# upper="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+# lower=upper.lower()
+# upper2=upper*2
+# lower2=lower*2
+# rot13=""
+# for k in line:
+       
+#        if k in upper:
+#               rot13+=upper2[upper.find(k)+13]
+#        elif k in lower:
+#               
+#               rot13+=lower2[lower.find(k)+13]
+#        else:
+#               rot13+=k
+# print("rot-13= ",rot13)
+
+#rot-13 method-2
 line= input("Enter any text:")
 upper="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 lower=upper.lower()
-upper2=upper*2
-lower2=lower*2
+
 rot13=""
 for k in line:
        
        if k in upper:
-              rot13+=upper2[upper.find(k)+13]
+              rot13+=upper[(upper.find(k)+13)%26]
        elif k in lower:
-              d=lower.find(k)
-              rot13+=lower2[lower.find(k)+13]
+              rot13+=lower[(lower.find(k)+13)%26]
        else:
               rot13+=k
 print("rot-13= ",rot13)
-
-
 
 
 
