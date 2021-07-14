@@ -67,20 +67,49 @@
 # print("rot-13= ",rot13)
 
 #rot-13 method-2
-line= input("Enter any text:")
-upper="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-lower=upper.lower()
+# line= input("Enter any text:")
+# upper="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+# lower=upper.lower()
 
-rot13=""
-for k in line:
+# rot13=""
+# for k in line:
        
-       if k in upper:
-              rot13+=upper[(upper.find(k)+13)%26]
-       elif k in lower:
-              rot13+=lower[(lower.find(k)+13)%26]
+#        if k in upper:
+#               rot13+=upper[(upper.find(k)+13)%26]
+#        elif k in lower:
+#               rot13+=lower[(lower.find(k)+13)%26]
+#        else:
+#               rot13+=k
+# print("rot-13= ",rot13)
+
+#Find HEXA value
+
+hex_in=input("Enter hex: ").strip().upper()
+hex_digit="0123456789ABCDEF"
+decimal_out=0
+p=len(hex_in)-1
+for digit in hex_in:
+       if digit in hex_digit:
+              deci_num=hex_digit.find(digit)
+              decimal_out+=deci_num*(16**p)
+              p-=1
        else:
-              rot13+=k
-print("rot-13= ",rot13)
+              print("invalid hexadecimal number")
+              exit(-1)
+print("Hexadecimal input =",hex_in)
+print("Decimal number =",decimal_out)
+
+
+
+            
+
+
+
+
+
+
+
+
 
 
 
