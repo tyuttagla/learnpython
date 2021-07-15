@@ -71,11 +71,35 @@
 # b=[x for x in range(0,2001)]
 # print(b)
 
-v1=[float(e) for e in input().split()]
-lax=v1[0]
-for index in range(1,len(v1)):
-    if v1[index]>lax:
-        lax=v1[index]
-print(lax)
-a=max(v1)
-print(a)
+# v1=[float(e) for e in input().split()]
+# lax=v1[0]
+# for index in range(1,len(v1)):
+#     if v1[index]>lax:
+#         lax=v1[index]
+# print(lax)
+# a=max(v1)
+# print(a)
+
+# vowels=["a","e","i","o","u"]
+# c=input("enter a charecter :")
+# if c in vowels:
+#     print("its a vowels")
+# else: print("it's not")
+
+# List in for cycle.
+x=[1,2,3,4,6,6,7]
+sum=0
+for e in x:
+    sum+=e
+print("sum x= ",sum)
+
+# change some in list
+for i in range(0,len(x),2):
+    x[i]*=2
+print(x)
+
+# Find mode of data
+n=int(input("Enter the number of data:"))
+data=[]
+for k in range(n):   
+    data.append(float(input()))
