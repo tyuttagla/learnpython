@@ -86,20 +86,47 @@
 #     print("its a vowels")
 # else: print("it's not")
 
-# List in for cycle.
-x=[1,2,3,4,6,6,7]
-sum=0
-for e in x:
-    sum+=e
-print("sum x= ",sum)
+# # List in for cycle.
 
-# change some in list
-for i in range(0,len(x),2):
-    x[i]*=2
-print(x)
+# x=[1,2,3,4,6,6,7]
+# sum=0
+# for e in x:
+#     sum+=e
+# print("sum x= ",sum)
 
-# Find mode of data
-n=int(input("Enter the number of data:"))
-data=[]
-for k in range(n):   
-    data.append(float(input()))
+# # change some in list
+# for i in range(0,len(x),2):
+#     x[i]*=2
+# print(x)
+
+# # Find mode of data
+# n=int(input("Enter the number of data:"))
+# data=[]
+# for k in range(n):   
+#     data.append(float(input()))
+
+# #list conpehension
+# #Calculation moving average
+# d = [float(x) for x in input(">>").split()]
+# mov_avg= [(d[i-1]+d[i]+d[i+1])/3 for i in range(1,len(d)-1)]
+# mov_avg.insert(0,(d[0]+d[1])/2)
+# mov_avg.append((d[-2]+d[-1])/2)
+# print(mov_avg)
+# find pull out charector
+# sentence = "teerayuth"
+# t="".join([c for c in sentence if c not in "aeiou"])
+# print(t)
+# # make flatten list
+# lists= [[1,2,3],[5,6],[7],[8,9],[10]] # all member shall be list
+# x=[e for alist in lists for e in alist]
+# print(x)
+
+# #2
+# p=[[x,y,z] for x in range(1,15) for y in range(x,115) for z in range(y,15) if x**2+y**2==z**2]
+# print(p)
+# #3
+# n=5
+# c=[j for i in range(2,5) for j in range(i*2,n*n,i) ]
+# p_2=[x for x in range(2,n*n) if x not in c]
+# print(c)
+# print(p_2)
